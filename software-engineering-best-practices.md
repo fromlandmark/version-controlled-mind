@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This document is the official guide for establishing professional software engineering standards. Its purpose is to promote **superior code quality**, enhance **operational stability**, and foster **effective team collaboration**. 
+This document is the my point of view for establishing professional software engineering standards. Its purpose is to promote **superior code quality**, enhance **operational stability**, and foster **effective team collaboration**. 
 
 It achieves this by codifying the essential practices that govern the entire software development lifecycle, from the initial lines of code written on a developer's machine to the final deployment into production environments. Adherence to these standards is critical for building resilient, maintainable, and valuable software.
 
@@ -32,7 +32,7 @@ Technical Debt is the future work owed to fix known shortcomings. Much like fina
 ### 1.3 The Standard Algorithm for Changing Legacy Code
 Based on Michael C. Feathers’ methodology, we adhere to this five-step safety cycle:
 
-1.  **Identify Change Points:** Locate specific classes/modules to modify.
+1.  **Identify Change Points:** Locate specific modules to modify.
 2.  **Find Test Points:** Identify entry points to observe outputs.
 3.  **Break Dependencies:** Refactor to make code testable. **No new features allowed here.**
 4.  **Write Tests:** Lock in existing behavior to create a safety net.
@@ -49,7 +49,6 @@ Based on Michael C. Feathers’ methodology, we adhere to this five-step safety 
 #### ❌ Pitfalls to Avoid
 * **The Temptation to Rewrite:** Avoid "Second System Syndrome." Favor incremental refactoring over risky rewrites.
 * **Going Rogue:** Custom approaches outside of company standards create an unmanageable maintenance burden.
-* **Internal Forks:** Never fork an OSS library without contributing upstream; it leads to impossible maintenance loops.
 
 ---
 
